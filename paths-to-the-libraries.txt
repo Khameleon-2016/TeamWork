@@ -1,2 +1,13 @@
-for jquery
-    
+jquery
+    node_modules/jquery/dist/jquery.js
+
+bootstrap 
+    js
+     node_modules/bootstrap/dist/js/bootstrap.js
+    css 
+     node_modules/bootstrap/dist/css/bootstrap.css
+
+http-server
+    just type in the console the text below to start a server 
+        node node_modules/http-server/bin/http-server
+
