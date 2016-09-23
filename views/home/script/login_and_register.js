@@ -1,14 +1,14 @@
 function loginAndRegisterButtons() {
     let $loginButton = $('.btn-login'),
         $registerButton = $('.btn-register'),
-        $container = $('.container');
+        $mainSection = $('.base-docs-section');
 
     $loginButton.on('click', function() {
-        $container.load('login.html');
+        $mainSection.load('login.html');
     });
 
     $registerButton.on('click', function() {
-        $container.load('register.html');
+        $mainSection.load('register.html');
     });
 
 }
