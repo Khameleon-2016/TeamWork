@@ -1,0 +1,38 @@
+/*.header-btn-custom {
+    position: relative;
+    top: 35%;
+}*/
+
+/*Start/Home page additional stylings*/
+.page-title {
+    margin-top: 0px;
+}
+
+.book-header-preview {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.book-img-preview {
+    margin:10px;
+}
+
+.book-review-text {
+    padding-left: 0px;
+}
+
+.background-transperant.right, .background-transperant.left {
+    background-image: none;
+}
+
+.footer-names {
+    margin-left: 38px;
+}
+
+.carousel-indicators li{
+    background-color: lightgrey;
+}
+
+.carousel-indicators li.active{
+    background-color: #337ab7;
+}
