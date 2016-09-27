@@ -1,6 +1,8 @@
 import { homeController } from './controllers/homeController.js';
+
 import { signupController } from './controllers/signupController.js';
 import { signinController } from './controllers/signinController.js';
+
 import { booksController } from './controllers/booksController.js';
 import { randomBookControlller } from './controllers/randomBookController.js';
 import { authorsController } from './controllers/authorsController.js';
@@ -28,7 +30,7 @@ var app = $.sammy('.content', function () {
     });
     
     this.get('#/authors', () => {
-
+        authorsController();
     });
 });
 
