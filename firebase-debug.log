@@ -1,14 +1,14 @@
 [debug] ----------------------------------------------------------------------
-[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve -p 8000
+[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\Asus K53SM\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
 [debug] CLI Version:  3.0.7
 [debug] Platform:     win32
-[debug] Node Version: v6.3.1
-[debug] Time:         Tue Sep 27 2016 12:47:37 GMT+0300 (FLE Daylight Time)
+[debug] Node Version: v6.1.0
+[debug] Time:         Tue Sep 27 2016 15:51:33 GMT+0300 (FLE Daylight Time)
 [debug] ----------------------------------------------------------------------
 [debug] 
 [info] Starting Firebase development server...
 [info] 
-[info] Project Directory: c:\Users\Admin\Desktop\JS APPS - Team Work\TeamWork
+[info] Project Directory: c:\Users\Asus K53SM\Desktop\Teamwork SPA\TeamWork
 [info] Public Directory: public
 [info] 
-[info] Server listening at: http://localhost:8000
+[info] Server listening at: http://localhost:5000
