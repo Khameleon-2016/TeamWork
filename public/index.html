@@ -1,69 +1,184 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Welcome to Firebase Hosting</title>
-    <style media="screen">
-      body {
-        font-family: Roboto, Arial, sans-serif;
-        background: #ECEFF1;
-        color: rgba(0,0,0,0.87);
-      }
 
-      a {
-        color: rgb(3,155,229);
-      }
+<head>
+    <title>The library of team Khameleon</title>
+    <script src="views/home/script/header.js"></script>
+    <script src="views/home/script/app.js"></script>
+    <script src="views/home/script/login_and_register.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="views/home/styles/main.css" type="text/css">
+</head>
 
-      #message {
-        max-width: 400px;
-        margin: 40px auto;
-        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2),0 1px 1px 0 rgba(0,0,0,0.14),0 2px 1px -1px rgba(0,0,0,0.12);
-        border-radius: 2px;
-        background: white;
-        padding: 16px 24px;
-      }
+<body>
+    <div class="container">
+        <header class="page-header">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="page-title">Khameleon Library</h1>
+                </div>
+                <div class="col-lg-6">
+                    <img src="views/home/images/books.png" alt="Books" class="pull-right">
+                    <ul class="nav nav-pills" id="header-navigation">
+                        <li class="active">
+                            <a href="#" id="home-btn">Home</a>
+                        </li>
+                        <li class="">
+                            <a href="#">Books</a>
+                        </li>
+                        <li class="">
+                            <a href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="base-docs-section">
+            <div class="row">
+                <div class="panel">
+                    <div class="panel-body">
+                        <blockquote>
+                            <p>“If this nation is to be wise as well as strong, if we are to achieve our destiny, then we need more new ideas for more wise men reading more good books in more public libraries. These libraries should be open to all—except
+                                the censor. We must know all the facts and hear all the alternatives and listen to all the criticisms. Let us welcome controversial books and controversial authors. For the Bill of Rights is the guardian of our security
+                                as well as our liberty."</p>
+                            <small>John F. Kennedy <cite title="Source Title">[Response to questionnaire in Saturday Review, October 29 1960]</cite></small>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="bs-component">
+                        <div class="modal-footer">
+                            <button class="btn btn-success btn-lg btn-block btn-login">Login</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bs-component">
+                        <div class="modal-footer">
+                            <button class="btn btn-primary btn-lg pull-left btn-block btn-register">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-      #message h1 {
-        font-size: 22px;
-        font-weight: 500;
-        text-align: center;
-        margin: 0 0 16px;
-      }
+            <div class="row">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
 
-      #message p {
-        font-weight: 300;
-        line-height: 150%;
-      }
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="col-lg-3">
+                                <img src="views/home/images/book.png" alt="Books" class="pull-left book-img-preview">
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="modal-header book-header-preview">
+                                    <h3>Lord of the Rings</h3>
+                                    <h5>by J. R. R. Tolkien</h5>
+                                </div>
+                                <div class="modal-body col-lg-11">
+                                    <div class="panel">
+                                        <div class="panel-body book-review-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates minus debitis facilis porro minima dignissimos, officiis dicta nesciunt harum totam unde quia eveniet excepturi animi expedita aliquam fugit facere atque, autem ex necessitatibus obcaecati
+                                            voluptatibus tempora! Quo illo magni aspernatur deleniti, </div>
+                                        <a href="#" class="btn btn-default">Read</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-lg-3">
+                                <img src="views/home/images/book.png" alt="Books" class="pull-left book-img-preview">
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="modal-header book-header-preview">
+                                    <h3>Harry Potter</h3>
+                                    <h5>by J. K. Rowling</h5>
+                                </div>
+                                <div class="modal-body col-lg-11">
+                                    <div class="panel">
+                                        <div class="panel-body book-review-text">
+                                            ibero labore. Quo vitae accusamus quaerat incidunt, ea dignissimos dolores ullam! Totam tempora ullam officia accusantium dolorem quas doloremque perspiciatis voluptatibus distinctio ratione, amet, eum aliquid odit eius inventore velit. In, sit?
+                                        </div>
+                                        <a href="#" class="btn btn-default">Read</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-lg-3">
+                                <img src="views/home/images/book.png" alt="Books" class="pull-left book-img-preview">
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="modal-header book-header-preview">
+                                    <h3>Hobbit</h3>
+                                    <h5>by J. R. R. Tolkien</h5>
+                                </div>
+                                <div class="modal-body col-lg-11">
+                                    <div class="panel">
+                                        <div class="panel-body book-review-text">
+                                            ibero labore. Quo vitae accusamus quaerat incidunt, ea dignissimos dolores ullam! Totam tempora ullam officia accusantium dolorem quas doloremque perspiciatis voluptatibus distinctio ratione, amet, eum aliquid odit eius inventore velit. In, sit?
+                                        </div>
+                                        <a href="#" class="btn btn-default">Read</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-      #message ul {
-        list-style: none;
-        margin: 16px 0 0;
-        padding: 0;
-        text-align: center;
-      }
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control background-transperant" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left custom-style-glyphicons" aria-hidden="true"></span>
+                    </a>
+                    <a class="right carousel-control background-transperant" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right custom-style-glyphicons" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
 
-      #message li a {
-        display: inline-block;
-        padding: 8px;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 500;
-        background: rgb(3,155,229);
-        color: white;
-        border: 1px solid rgb(3,155,229);
-        border-radius: 3px;
-        font-size: 14px;
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h1>Welcome to Firebase Hosting</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <ul>
-        <li><a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a></li>
-      </ul>
+        </main>
+        <footer>
+            <div class="row">
+                <div class="modal-header">
+                    <h4 class="modal-title pagination-centered text-center">Librarians:</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="col-lg-2 footer-names">
+                        <p><a href="https://telerikacademy.com/Users/lyubomir.bandrov">Lyubomir Bandrov</a></p>
+                    </div>
+                    <div class="col-lg-2 footer-names">
+                        <p><a href="https://telerikacademy.com/Users/NP.Kumanov">Nikolay Kumanov</a></p>
+                    </div>
+                    <div class="col-lg-2 footer-names">
+                        <p><a href="https://telerikacademy.com/Users/telerik2014">Dimitar Stoyanov</a></p>
+                    </div>
+                    <div class="col-lg-2 footer-names">
+                        <p><a href="https://telerikacademy.com/Users/Enikov">Todor Enikov</a></p>
+                    </div>
+                    <div class="col-lg-2 footer-names">
+                        <p><a href="https://telerikacademy.com/Users/matir8">Martin Markov</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     </div>
-  </body>
+
+    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script src="configs/systemjs-config.js"></script>
+    <script src="configs/firebase-config.js"></script>
+</body>
+
 </html>
