@@ -12,6 +12,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="views/home/styles/main.css" type="text/css">
+    <link rel="stylesheet" href="css/app.css" type="text/css">
 </head>
 
 <body>
@@ -25,7 +26,7 @@
                     <img src="views/home/images/books.png" alt="Books" class="pull-right">
                     <ul class="nav nav-pills" id="header-navigation">
                         <li class="active">
-                            <a href="#" id="home-btn">Home</a>
+                            <a href="#/home" id="home-btn">Home</a>
                         </li>
                         <li class="">
                             <a href="#">Books</a>
@@ -70,10 +71,11 @@
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
-    <script src="node_modules/sammy/lib/sammy.js"></script>
     <script src="node_modules/systemjs/dist/system.js"></script>
-    <script src="configs/systemjs-config.js"></script>
+    <script src="node_modules/sammy/lib/sammy.js"></script>
+    
     <script src="configs/firebase-config.js"></script>
+    <script src="configs/systemjs-config.js"></script>
 </body>
 
 </html>
