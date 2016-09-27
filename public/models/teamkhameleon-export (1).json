@@ -1,0 +1,18 @@
+{
+  "books" : [ {
+    "author" : "J. R. Rowling",
+    "description" : "Harry Potter and the Philosopher's Stone is the first novel in the Harry Potter series and J. K. Rowling's debut novel, first published in 1997 by Bloomsbury. It was published in the United States as Harry Potter and the Sorcerer's Stone by Scholastic Corporation in 1998.",
+    "img" : "http://vignette3.wikia.nocookie.net/harrypotter/images/0/0e/Philostone.jpg/revision/latest?cb=20101208171110",
+    "name" : "Harry Potter and the Philosopher's Stone"
+  }, {
+    "author" : "Rick Riordan",
+    "description" : "The Hidden Oracle is the first book in The Trials of Apollo series by Rick Riordan. It was released on May 3, 2016. It takes place roughly six months after The Blood of Olympus.",
+    "img" : "data:image/webp;base64",
+    "name" : "The Hidden Oracle"
+  }, {
+    "author" : "Rick Riordon",
+    "description" : "The Sea of Monsters is a fantasy-adventure novel based on Greek mythology written by Rick Riordan published in 2006. It is the second novel in the Percy Jackson & the Olympians series and the sequel to The Lightning Thief.",
+    "img" : "https://upload.wikimedia.org/wikipedia/en/4/46/PercySeamonsters.gif",
+    "name" : "The Sea Of Monsters"
+  } ]
+}
