@@ -4,11 +4,13 @@ function loginAndRegisterButtons() {
         $mainSection = $('.base-docs-section');
 
     $loginButton.on('click', function() {
-        $mainSection.load('login.html');
+        console.log('login');
+        $mainSection.load('/login.html');
     });
 
     $registerButton.on('click', function() {
-        $mainSection.load('register.html');
+        console.log('reg');
+        $mainSection.load('/register.html');
     });
 
 }
