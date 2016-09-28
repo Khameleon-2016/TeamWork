@@ -1,7 +1,8 @@
 const signinController = function() {
     var $email,
         $password,
-        auth = firebase.auth();
+        auth = firebase.auth(),
+        $message = $('<p />');
 
     $.ajax({
         url: 'templates/sign-in-form.html',
@@ -16,11 +17,11 @@ const signinController = function() {
             
             auth.signInWithEmailAndPassword($email, $password)
             .catch((error) => {
-                console.log(error.code);
-                console.log(error.message);
+                $message.html(error.message);
             });
 
-            console.log("sdffd");
+            
+            console.log($message.text());
         });
     });
 };
