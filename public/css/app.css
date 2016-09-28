@@ -10,3 +10,11 @@
     width: 200px;
     height: 300px
 }
+
+.block {
+    display: inline-block;
+}
+
+.color {
+    color: darkblue;
+}

@@ -6,8 +6,9 @@ import { signinController } from './controllers/signinController.js';
 import { booksController } from './controllers/booksController.js';
 import { randomBookControlller } from './controllers/randomBookController.js';
 import { authorsController } from './controllers/authorsController.js';
+import { contactController } from './controllers/contactController.js';
 
-var app = $.sammy('.content', function () {
+var app = $.sammy('.content', function() {
 
     this.get('#/home', () => {
         homeController();
@@ -28,9 +29,13 @@ var app = $.sammy('.content', function () {
     this.get('#/random-book', () => {
         randomBookControlller();
     });
-    
+
     this.get('#/authors', () => {
         authorsController();
+    });
+
+    this.get('#/contacts', () => {
+        contactController();
     });
 });
 
