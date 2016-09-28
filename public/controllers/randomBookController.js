@@ -38,7 +38,7 @@ const randomBookControlller = function () {
 
             function showResult(book) {
                 let resultCotainer = document.getElementById('result-container'),
-                    bookTitle = document.createElement('h3'),
+                    bookname = document.createElement('h3'),
                     author = document.createElement('h4'),
                     genre = document.createElement('h4'),
                     img = document.createElement('img'),
@@ -50,7 +50,7 @@ const randomBookControlller = function () {
                     resultCotainer.innerHTML = 'No books with the selected genre was found in the DataBase.';
                 }
                 else {
-                    bookTitle.innerText = book.title;
+                    bookname.innerText = book.name;
                     author.innerText = book.author;
                     genre.innerText = book.genre;
 
@@ -60,7 +60,7 @@ const randomBookControlller = function () {
 
                     description.innerText = book.description;
 
-                    resultCotainer.appendChild(bookTitle);
+                    resultCotainer.appendChild(bookname);
                     resultCotainer.appendChild(author);
                     resultCotainer.appendChild(genre);
                     resultCotainer.appendChild(img);
