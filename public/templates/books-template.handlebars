@@ -1,11 +1,15 @@
 <div id ="list-of-books">   
-    <h1>List of all books!</h1>
-        {{#this}}
-            <div id="books-content">
-                <h3>The name of the books is: <strong>{{name}}</strong></h3>
-                <img src="{{img}}" alt="No image!" class="image">
-                <p>Description: {{description}}</p>
-                <span>Author: {{author}}</span>
+    <h1 class="control-label">List of all books in the database!</h1>
+        {{#this}}  
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{name}}</h3>
             </div>
+            <div class="panel-body tab-pane fade active in">
+                <img src="{{img}}" alt="No image!" class="image"><br><br>
+                <p><strong>Description: </strong>{{description}}</p>
+                <span><strong>Author: </strong>{{author}}</span>
+            </div>
+        </div>
         {{/this}}
 </div>
