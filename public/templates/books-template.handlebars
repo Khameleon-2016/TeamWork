@@ -1,0 +1,11 @@
+<div id ="list-of-books">   
+    <h1>List of all books!</h1>
+        {{#this}}
+            <div id="books-content">
+                <h3>The name of the books is: <strong>{{name}}</strong></h3>
+                <img src="{{img}}" alt="No image!" class="image">
+                <p>Description: {{description}}</p>
+                <span>Author: {{author}}</span>
+            </div>
+        {{/this}}
+</div>
