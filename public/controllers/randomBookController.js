@@ -2,7 +2,7 @@
 //TODO: Make the page prettier
 import { requester } from '../http-request/request.js';
 
-const randomBookControlller = function() {
+const randomBookController = function() {
     requester
         .get('../templates/random-book-template.html')
         .done(function(template) {
@@ -74,4 +74,4 @@ const randomBookControlller = function() {
 };
 
 
-export { randomBookControlller };
+export { randomBookController };

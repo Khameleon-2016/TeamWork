@@ -4,7 +4,7 @@ import { signupController } from './controllers/signupController.js';
 import { signinController } from './controllers/signinController.js';
 
 import { booksController } from './controllers/booksController.js';
-import { randomBookControlller } from './controllers/randomBookController.js';
+import { randomBookController } from './controllers/randomBookController.js';
 import { authorsController } from './controllers/authorsController.js';
 import { contactController } from './controllers/contactController.js';
 
@@ -27,7 +27,7 @@ var app = $.sammy('.content', function() {
     });
 
     this.get('#/random-book', () => {
-        randomBookControlller();
+        randomBookController();
     });
 
     this.get('#/authors', () => {
