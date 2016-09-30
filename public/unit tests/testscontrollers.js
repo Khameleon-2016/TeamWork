@@ -1,4 +1,14 @@
-chai.should();
+import { authorsController } from 'authors';
+import { booksController } from 'books';
+import { contactController } from 'contact';
+import { homeController } from 'home';
+import { randomBookController } from 'randomBook';
+import { signinController } from 'signin';
+import { signupController } from 'signup';
+
+
+mocha.setup('bdd');
+var expect = chai.expect;
 
 describe('Test all of the controllers in the application', function() {
 
@@ -38,3 +48,5 @@ describe('Test all of the controllers in the application', function() {
     });
 
 });
+
+mocha.run();

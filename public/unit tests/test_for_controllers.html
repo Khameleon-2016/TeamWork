@@ -12,25 +12,33 @@
     <script src="../node_modules/sinon/pkg/sinon-1.17.6.js"></script>
     <script src="../node_modules/chai/chai.js"></script>
     <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/systemjs/dist/system.js"></script>
     <div id="mocha">
 
     </div>
-    <script>
-        mocha.setup('bdd');
-        var expect = chai.expect;
-    </script>
-    <!--<script src="myapi.js"></script>-->
-    <script src="../controllers/authorsController.js"></script>
-    <script src="../controllers/booksController.js"></script>
-    <script src="../controllers/contactController.js"></script>
-    <script src="../controllers/homeController.js"></script>
-    <script src="../controllers/randomBookController.js"></script>
-    <script src="../controllers/signinController.js"></script>
-    <script src="../controllers/signupController.js"></script>
 
-    <script src="testscontrollers.js"></script>
+    <!--<script src="myapi.js"></script>-->
+
     <script>
-        mocha.run();
+        SystemJS.config({
+            'transpiler': 'plugin-babel',
+            'map': {
+                'plugin-babel': '../node_modules/systemjs-plugin-babel/plugin-babel.js',
+                'systemjs-babel-build': '../node_modules/systemjs-plugin-babel/systemjs-babel-browser.js',
+                'main': './testscontrollers.js',
+                'firebase': 'node_modules/firebase/firebase.js',
+                'authors': '../controllers/authorsController.js',
+                'books': '../controllers/booksController.js',
+                'contact': '../controllers/contactController.js',
+                'home': '../controllers/homeController.js',
+                'randomBook': '../controllers/randomBookController.js',
+                'signin': '../controllers/signinController.js',
+                'signup': '../controllers/signupController.js',
+                'request': '../http-request/request.js'
+            }
+        });
+
+        System.import('main');
     </script>
 </body>
 
