@@ -1,4 +1,5 @@
-import { requester } from '../http-requests/request.js';
+//import { requester } from 'request';
+import { requester } from '../http-request/request.js';
 
 const authorsController = function() {
     var authors = firebase.database().ref('/authors'),

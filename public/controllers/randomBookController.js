@@ -1,5 +1,6 @@
 //Uncomment all lines so the it canwork with genres too.
 //TODO: Make the page prettier
+//import { requester } from 'request';
 import { requester } from '../http-request/request.js';
 
 const randomBookController = function() {
