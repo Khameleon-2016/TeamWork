@@ -12,7 +12,7 @@ var requester = {
 
         return $.ajax({
             url: url,
-            type: 'GET'
+            type: 'GET',
             contentType: 'application/json'
         });
     },

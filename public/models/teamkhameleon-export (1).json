@@ -1,5 +1,5 @@
 {
-  "books" : [ 
+  "books" : [
     {
       "author" : "J. R. Rowling",
       "description" : "Harry Potter and the Philosopher's Stone is the first novel in the Harry Potter series and J. K. Rowling's debut novel, first published in 1997 by Bloomsbury. It was published in the United States as Harry Potter and the Sorcerer's Stone by Scholastic Corporation in 1998.",
@@ -15,20 +15,23 @@
       "description" : "The Sea of Monsters is a fantasy-adventure novel based on Greek mythology written by Rick Riordan published in 2006. It is the second novel in the Percy Jackson & the Olympians series and the sequel to The Lightning Thief.",
       "img" : "https://upload.wikimedia.org/wikipedia/en/4/46/PercySeamonsters.gif",
       "name" : "The Sea Of Monsters"
-    } 
+    }
   ],
   "authors": [
     {
       "name": "Rick Riordan",
-      "description": "PLEASE BE AWARE: Rick does his best to read all his fan mail, but due to the large volume of correspondence he receives, it’s impossible for him to respond personally. Please *do not* expect an answer. If you are writing for a school project that gives extra credit for receiving an author reply, Rick is not the best author to choose."
+      "description": "PLEASE BE AWARE: Rick does his best to read all his fan mail, but due to the large volume of correspondence he receives, it’s impossible for him to respond personally. Please *do not* expect an answer. If you are writing for a school project that gives extra credit for receiving an author reply, Rick is not the best author to choose.",
+      "img": "http://rickriordan.com/content/uploads/2016/04/rick-headshot.jpg"
     },
     {
       "name": "J. K. Rowling",
-      "description": "Author and Founder of Lumos, J.K. Rowling talks to Host Lauren Laverne. The interview marks the official launch of We Are Lumos Worldwide; a global campaign to raise awareness of the eight million children living in orphanages around the world, and the work that Lumos is doing to help them return to family life."
+      "description": "Author and Founder of Lumos, J.K. Rowling talks to Host Lauren Laverne. The interview marks the official launch of We Are Lumos Worldwide; a global campaign to raise awareness of the eight million children living in orphanages around the world, and the work that Lumos is doing to help them return to family life.",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/5/5d/J._K._Rowling_2010.jpg"
     },
     {
       "name": "Sarah J. Maas",
-      "description":  "Sarah J. Maas is the #1 New York Times bestselling author of the Throne of Glass series and A Court of Thorns and Roses series, as well as a USA Today and international bestselling author. Sarah wrote the first incarnation of the Throne of Glass series when she was just sixteen, and it has now sold in thirty-five languages. A New York native, Sarah currently lives in Pennsylvania with her husband and dog. Empire of Storms, the fifth Throne of Glass novel,is available now."
+      "description":  "Sarah J. Maas is the #1 New York Times bestselling author of the Throne of Glass series and A Court of Thorns and Roses series, as well as a USA Today and international bestselling author. Sarah wrote the first incarnation of the Throne of Glass series when she was just sixteen, and it has now sold in thirty-five languages. A New York native, Sarah currently lives in Pennsylvania with her husband and dog. Empire of Storms, the fifth Throne of Glass novel,is available now.",
+      "img": "http://sarahjmaas.com/wp-content/uploads/2011/10/Sarah1.jpg"
     }
   ]
 }
