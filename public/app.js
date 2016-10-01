@@ -43,7 +43,19 @@ var app = $.sammy('.content', function() {
     this.get('#/addAuthor', () => {
       addAuthorController();
     });
-    
+
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        $('#signOut').removeClass('hide');
+        $('#signOut').addClass('');
+      }
+    });
+
+    $('#signOut').on('click', () => {
+      firebase.auth().signOut();
+    });
+
+
 });
 
 app.run('#/home');
