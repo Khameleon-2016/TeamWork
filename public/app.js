@@ -8,6 +8,8 @@ import { randomBookController } from './controllers/randomBookController.js';
 import { authorsController } from './controllers/authorsController.js';
 import { contactController } from './controllers/contactController.js';
 
+import { addAuthorController } from './controllers/addAuthorController.js';
+
 var app = $.sammy('.content', function() {
 
     this.get('#/home', () => {
@@ -37,6 +39,11 @@ var app = $.sammy('.content', function() {
     this.get('#/contacts', () => {
         contactController();
     });
+
+    this.get('#/addAuthor', () => {
+      addAuthorController();
+    });
+    
 });
 
 app.run('#/home');
