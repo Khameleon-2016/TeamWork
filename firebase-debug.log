@@ -1,56 +1,14 @@
 [debug] ----------------------------------------------------------------------
-[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\Asus K53SM\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve -p 8080
 [debug] CLI Version:  3.0.7
 [debug] Platform:     win32
-[debug] Node Version: v6.1.0
-[debug] Time:         Thu Sep 29 2016 15:24:35 GMT+0300 (FLE Daylight Time)
+[debug] Node Version: v6.3.1
+[debug] Time:         Sat Oct 01 2016 13:55:10 GMT+0300 (FLE Daylight Time)
 [debug] ----------------------------------------------------------------------
 [debug] 
 [info] Starting Firebase development server...
 [info] 
-[info] Project Directory: C:\Users\Asus K53SM\Desktop\Teamwork SPA\TeamWork
+[info] Project Directory: C:\Users\Admin\Desktop\Teamwork\TeamWork
 [info] Public Directory: public
 [info] 
-[info] Server listening at: http://localhost:5000
-[debug] ----------------------------------------------------------------------
-[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\Asus K53SM\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] CLI Version:  3.0.7
-[debug] Platform:     win32
-[debug] Node Version: v6.1.0
-[debug] Time:         Thu Sep 29 2016 21:20:10 GMT+0300 (FLE Daylight Time)
-[debug] ----------------------------------------------------------------------
-[debug] 
-[info] Starting Firebase development server...
-[info] 
-[info] Project Directory: C:\Users\Asus K53SM\Desktop\Teamwork SPA\TeamWork
-[info] Public Directory: public
-[info] 
-[info] Server listening at: http://localhost:5000
-[debug] ----------------------------------------------------------------------
-[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\Asus K53SM\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] CLI Version:  3.0.7
-[debug] Platform:     win32
-[debug] Node Version: v6.1.0
-[debug] Time:         Thu Sep 29 2016 23:12:08 GMT+0300 (FLE Daylight Time)
-[debug] ----------------------------------------------------------------------
-[debug] 
-[info] Starting Firebase development server...
-[info] 
-[info] Project Directory: C:\Users\Asus K53SM\Desktop\Teamwork SPA\TeamWork
-[info] Public Directory: public
-[info] 
-[info] Server listening at: http://localhost:5000
-[debug] ----------------------------------------------------------------------
-[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\Asus K53SM\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] CLI Version:  3.0.7
-[debug] Platform:     win32
-[debug] Node Version: v6.1.0
-[debug] Time:         Fri Sep 30 2016 12:51:19 GMT+0300 (FLE Daylight Time)
-[debug] ----------------------------------------------------------------------
-[debug] 
-[info] Starting Firebase development server...
-[info] 
-[info] Project Directory: C:\Users\Asus K53SM\Desktop\Teamwork SPA\TeamWork
-[info] Public Directory: public
-[info] 
-[info] Server listening at: http://localhost:5000
+[info] Server listening at: http://localhost:8080

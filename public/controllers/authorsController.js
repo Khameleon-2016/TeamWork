@@ -1,4 +1,3 @@
-//import { requester } from 'request';
 import { requester } from '../http-request/request.js';
 
 const authorsController = function() {
@@ -21,15 +20,6 @@ const authorsController = function() {
                  });*/
 
                 // The show and hide buttons but they are still in editing please do not touch them!!!!!!!!!!!!!!!!!!!
-
-                $('.showDescriptionBtn').on('click', () => {
-                    $('#description').removeClass('hide');
-                });
-
-                $('.hideDescriptionBtn').on('click', () => {
-                    $('#description').addClass('hide');
-                });
-
 
             });
 

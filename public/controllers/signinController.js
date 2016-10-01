@@ -12,18 +12,15 @@ const signinController = function() {
         .done((template) => {
             $('.content').html(template);
 
-            $email = $('.email').val();
-            $password = $('.password').val();
-
             $('.signin').on('click', () => {
 
-                auth.signInWithEmailAndPassword($email, $password)
+              $email = $('.email').val();
+              $password = $('.password').val();
+
+              auth.signInWithEmailAndPassword($email, $password)
                     .catch((error) => {
-                        $message.html(error.message);
+                        console.log(error.code);
                     });
-
-
-                console.log($message.text());
             });
         });
 };
