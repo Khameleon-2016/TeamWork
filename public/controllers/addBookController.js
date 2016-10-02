@@ -8,9 +8,10 @@ const addBookController = () => {
         $img;
 
     class Book {
-      constructor(author, name, description, imgUrl) {
+      constructor(author, name, genre, description, imgUrl) {
         this.author = author;
         this.name = name;
+        this.genre = genre;
         this.description = description;
         this.imgUrl = imgUrl;
       }
@@ -29,6 +30,14 @@ const addBookController = () => {
 
       set name(name) {
         this._name = name;
+      }
+
+      get genre() {
+        return this._genre;
+      }
+
+      set genre(value) {
+        this._genre = value;
       }
 
       get description() {

@@ -4,6 +4,7 @@ import { signupController } from './controllers/signupController.js';
 import { signinController } from './controllers/signinController.js';
 
 import { booksController } from './controllers/booksController.js';
+import { categoriesController } from './controllers/categoriesController.js';
 import { randomBookController } from './controllers/randomBookController.js';
 import { authorsController } from './controllers/authorsController.js';
 import { contactController } from './controllers/contactController.js';
@@ -27,6 +28,10 @@ var app = $.sammy('.content', function() {
 
     this.get('#/books', () => {
         booksController();
+    });
+
+    this.get('#/categories', () => {
+        categoriesController();
     });
 
     this.get('#/random-book', () => {
