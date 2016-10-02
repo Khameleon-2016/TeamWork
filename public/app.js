@@ -9,6 +9,7 @@ import { authorsController } from './controllers/authorsController.js';
 import { contactController } from './controllers/contactController.js';
 
 import { addAuthorController } from './controllers/addAuthorController.js';
+import { addBookController } from './controllers/addBookController.js';
 
 var app = $.sammy('.content', function() {
 
@@ -44,17 +45,27 @@ var app = $.sammy('.content', function() {
       addAuthorController();
     });
 
-    firebase.auth().onAuthStateChanged((user) => {
-      if (user) {
-        $('#signOut').removeClass('hide');
-        $('#signOut').addClass('show');
-      }
+    this.get('#/addBook', () => {
+      addBookController();
     });
 
     $('#signOut').on('click', () => {
       firebase.auth().signOut();
     });
 
+
+    function show(selector) {
+      $(selector).removeClass('hide');
+      $(selector).addClass('show');
+    }
+
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        show('#signOut');
+        show('#addBook');
+        show('#addAuthor');
+      }
+    });
 
 });
 

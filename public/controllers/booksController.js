@@ -2,7 +2,7 @@
 import { requester } from '../http-request/request.js';
 
 const booksController = function() {
-    var books = firebase.database().ref('/books'),
+    var books = firebase.database().ref(),
         compile;
 
     requester
@@ -12,7 +12,7 @@ const booksController = function() {
             books.on('value', (data) => {
                 compile = Handlebars.compile(template);
 
-                $('.content').html(compile(data.val()));
+                $('.content').html(compile(data.val().books));
             });
         });
 };
