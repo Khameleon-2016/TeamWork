@@ -54,6 +54,10 @@ var app = $.sammy('.content', function() {
         addBookController();
     });
 
+    this.get('#/signout', (context) => {
+        context.redirect('#/home');
+    });
+
     $('#signOut').on('click', () => {
         firebase.auth().signOut();
         $('.btn-login').removeClass('hidden');
