@@ -47,7 +47,7 @@ var app = $.sammy('.content', function() {
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
         $('#signOut').removeClass('hide');
-        $('#signOut').addClass('');
+        $('#signOut').addClass('show');
       }
     });
 

@@ -1,7 +1,8 @@
 import { requester } from '../http-request/request.js';
 
 const addAuthorController = () => {
-  var data = firebase.database(),
+  var authors = firebase.database().ref('authors'),
+      key,
       auth = firebase.auth(),
       $name,
       $description,
@@ -39,34 +40,30 @@ const addAuthorController = () => {
       this._imgUrl = imgUrl;
     }
 
-    toJSON() {
-      return JSON.stringify({
+    toObject() {
+      return {
         name: this._name,
         description: this._description,
-        imgUrl: this._imgUrl
-      });
+        img: this._imgUrl
+      };
     }
   }
 
   requester
       .get('templates/addAuthor-template.html')
       .done((template) => {
-        $('.content').html(template);
+      $('.content').html(template);
 
         $('#addAuthor').on('click', () => {
-          console.log("sdfsdf");
 
           $name = $('#name').val();
           $description = $('#description').val();
           $imgUrl = $('#imgUrl').val();
 
-          auth.onAuthStateChanged((user) => {
-            if (!user) {
-              alert('sfgdfgdfgd');
-            }
-          });
-
           author = new Author($name, $description, $imgUrl);
+
+          authors.push(author.toObject());
+
         });
 
       });
