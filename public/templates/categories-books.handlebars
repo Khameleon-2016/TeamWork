@@ -1,0 +1,13 @@
+{{#each books}}
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{name}}</h3>
+        </div>
+        <div class="panel-body tab-pane fade active in">
+            <img src="{{img}}" alt="No image!" class="image">
+            <br><br>
+            <p><strong>Description: </strong>{{description}}</p>
+            <span><strong>Author: </strong>{{author}}</span>
+        </div>
+    </div>
+{{/each}}

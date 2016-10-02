@@ -1,0 +1,16 @@
+<div class="form-group">
+    <div class="text-center">
+        <h3>Select category: </h3>
+    </div>
+    <select name="genre-select" class="form-control" id="genre" >
+        {{#each genres}}
+            <option value="{{this}}">{{this}}</option>
+        {{/each}}
+    </select>
+    <br>
+    <input id="select-genre" class="btn center-block" type="submit" value="Select Genre">
+    <br>
+    <div id="result-container">
+    
+    </div>
+</div>
