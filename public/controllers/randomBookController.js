@@ -21,11 +21,11 @@ const randomBookController = function() {
                         booksArr = Object.keys(books).map(function(key) {
                             return books[key];
                         }),
-                        selectGenre = select.options[select.selectedIndex].text.toLowerCase(),
+                        selectGenre = select.options[select.selectedIndex].text,
                         booksWithSelectedGenre = [];
 
                     booksArr.forEach(function(el) {
-                        if (el.genre === selectGenre) {
+                        if (el.genre.indexOf(selectGenre) !== - 1) {
                             booksWithSelectedGenre.push(el);
                         }
                     });
