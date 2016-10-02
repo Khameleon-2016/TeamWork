@@ -14,10 +14,10 @@ const signinController = function() {
 
             $('.signin').on('click', () => {
 
-              $email = $('.email').val();
-              $password = $('.password').val();
+                $email = $('.email').val();
+                $password = $('.password').val();
 
-              auth.signInWithEmailAndPassword($email, $password)
+                auth.signInWithEmailAndPassword($email, $password)
                     .catch((error) => {
                         console.log(error.code);
                     });

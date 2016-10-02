@@ -47,29 +47,36 @@ var app = $.sammy('.content', function() {
     });
 
     this.get('#/addAuthor', () => {
-      addAuthorController();
+        addAuthorController();
     });
 
     this.get('#/addBook', () => {
-      addBookController();
+        addBookController();
     });
 
     $('#signOut').on('click', () => {
-      firebase.auth().signOut();
+        firebase.auth().signOut();
+        $('.btn-login').removeClass('hidden');
+        $('.btn-register').removeClass('hidden');
+        $('#signOut').addClass('hidden');
+        $('#addBook').addClass('hidden');
+        $('#addAuthor').addClass('hidden');
     });
 
 
     function show(selector) {
-      $(selector).removeClass('hide');
-      $(selector).addClass('show');
+        $(selector).removeClass('hidden');
+        $(selector).addClass('show');
     }
 
     firebase.auth().onAuthStateChanged((user) => {
-      if (user) {
-        show('#signOut');
-        show('#addBook');
-        show('#addAuthor');
-      }
+        if (user) {
+            show('#signOut');
+            show('#addBook');
+            show('#addAuthor');
+            $('.btn-login').addClass('hidden');
+            $('.btn-register').addClass('hidden');
+        }
     });
 
 });
