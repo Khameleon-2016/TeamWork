@@ -5,7 +5,7 @@ import { requester } from '../http-request/request.js';
 
 const randomBookController = function() {
     requester
-        .get('../templates/random-book-template.html')
+        .get('templates/random-book-template.html')
         .done(function(template) {
             $('.content').html(template);
             var button = document.getElementById('get-random-book');
