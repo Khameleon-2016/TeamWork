@@ -52,13 +52,16 @@ const addAuthorController = () => {
   requester
       .get('templates/addAuthor-template.html')
       .done((template) => {
-      $('.content').html(template);
+        $('.content').html(template);
+        //console.log($('#name').val());
 
-        $('#addAuthor').on('click', () => {
+        $('.addAuthor').on('click', () => {
 
           $name = $('#name').val();
           $description = $('#description').val();
           $imgUrl = $('#imgUrl').val();
+
+          //console.log($('#name').val());
 
           author = new Author($name, $description, $imgUrl);
 
