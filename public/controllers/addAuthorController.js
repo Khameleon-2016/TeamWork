@@ -1,75 +1,75 @@
 import { requester } from '../http-request/request.js';
 
 const addAuthorController = () => {
-  var authors = firebase.database().ref('authors'),
-      key,
-      auth = firebase.auth(),
-      $name,
-      $description,
-      $imgUrl,
-      author;
+    var authors = firebase.database().ref('authors'),
+        key,
+        auth = firebase.auth(),
+        $name,
+        $description,
+        $imgUrl,
+        author;
 
-  class Author {
-    constructor(name, description, imgUrl) {
-      this.name = name;
-      this.description = description;
-      this.imgUrl = imgUrl;
+    class Author {
+        constructor(name, description, imgUrl) {
+            this.name = name;
+            this.description = description;
+            this.imgUrl = imgUrl;
+        }
+
+        get name() {
+            return this._name;
+        }
+
+        set name(name) {
+            this._name = name;
+        }
+
+        get description() {
+            return this._description;
+        }
+
+        set description(description) {
+            this._description = description;
+        }
+
+        get imgUrl() {
+            return this._imgUrl;
+        }
+
+        set imgUrl(imgUrl) {
+            this._imgUrl = imgUrl;
+        }
+
+        toObject() {
+            return {
+                name: this._name,
+                description: this._description,
+                img: this._imgUrl
+            };
+        }
     }
 
-    get name() {
-      return this._name;
-    }
+    requester
+        .get('templates/addAuthor-template.html')
+        .done((template) => {
+            $('.content').html(template);
+            //console.log($('#name').val());
 
-    set name(name) {
-      this._name = name;
-    }
+            $('.addAuthor').on('click', () => {
 
-    get description() {
-      return this._description;
-    }
+                $name = $('#name').val();
+                $description = $('#description').val();
+                $imgUrl = $('#imgUrl').val();
 
-    set description(description) {
-      this._description = description;
-    }
+                //console.log($('#name').val());
 
-    get imgUrl() {
-      return this._imgUrl;
-    }
+                author = new Author($name, $description, $imgUrl);
 
-    set imgUrl(imgUrl) {
-      this._imgUrl = imgUrl;
-    }
+                authors.push(author.toObject());
 
-    toObject() {
-      return {
-        name: this._name,
-        description: this._description,
-        img: this._imgUrl
-      };
-    }
-  }
-
-  requester
-      .get('templates/addAuthor-template.html')
-      .done((template) => {
-        $('.content').html(template);
-        //console.log($('#name').val());
-
-        $('.addAuthor').on('click', () => {
-
-          $name = $('#name').val();
-          $description = $('#description').val();
-          $imgUrl = $('#imgUrl').val();
-
-          //console.log($('#name').val());
-
-          author = new Author($name, $description, $imgUrl);
-
-          authors.push(author.toObject());
+            });
 
         });
-
-      });
 };
 
 export { addAuthorController };
