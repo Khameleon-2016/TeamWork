@@ -1,7 +1,8 @@
 import { requester } from '../http-request/request.js';
 
 const addBookController = () => {
-    var books = firebase.database().ref('books'),
+    var books = firebase.database().ref().child('books'),
+        book,
         $author,
         $name,
         $description,
@@ -70,6 +71,19 @@ const addBookController = () => {
       .get('templates/addBook-template.html')
       .done((template) => {
         $('.content').html(template);
+
+        $('.addBook').on('click', () => {
+
+          $author = $('#author').val();
+          $name = $('#name').val();
+          $description = $('#description').val();
+          $img = $('#imgUrl').val();
+
+          book = new Book($author, $name, '', $description, $img);
+
+          books.push(book.toObject());
+
+        });
       });
 };
 

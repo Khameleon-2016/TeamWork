@@ -10,12 +10,13 @@ const authorsController = function() {
         .done((template) => {
             database.on('value', (data) => {
                 compile = Handlebars.compile(template);
+
                 // Convert object to array.
                 authors = $.map(data.val().authors, (value, index) => {
                     return [value];
                 });
 
-                console.log(authors);
+                //console.log(authors);
 
                 $('.content').html(compile(authors));
 

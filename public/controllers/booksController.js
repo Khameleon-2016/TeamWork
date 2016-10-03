@@ -2,17 +2,24 @@
 import { requester } from '../http-request/request.js';
 
 const booksController = function() {
-    var books = firebase.database().ref(),
+    var database = firebase.database().ref(),
+        books,
         compile;
 
     requester
         .get('templates/books-template.handlebars')
         .done((template) => {
 
-            books.on('value', (data) => {
+            database.on('value', (data) => {
                 compile = Handlebars.compile(template);
 
-                $('.content').html(compile(data.val().books));
+                books = $.map(data.val().books, (value, index) => {
+                  return [value];
+                });
+
+                //console.log(books);
+
+                $('.content').html(compile(books));
             });
         });
 };
