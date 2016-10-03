@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Unit Tests</title>
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css">
+</head>
+
+<body>
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script src="../node_modules/sinon/pkg/sinon-1.17.6.js"></script>
+    <script src="../node_modules/chai/chai.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/systemjs/dist/system.js"></script>
+    <script src="../controllers/addBookController.js"></script>
+    <div id="mocha">
+
+    </div>
+
+    <!--<script src="myapi.js"></script>-->
+
+    <script>
+        SystemJS.config({
+            'transpiler': 'plugin-babel',
+            'map': {
+                'plugin-babel': '../node_modules/systemjs-plugin-babel/plugin-babel.js',
+                'systemjs-babel-build': '../node_modules/systemjs-plugin-babel/systemjs-babel-browser.js',
+                'main': './testsfortheclasses.js',
+                'firebase': 'node_modules/firebase/firebase.js',
+                // 'authors': '../controllers/authorsController.js',
+                // 'books': '../controllers/booksController.js',
+                // 'contact': '../controllers/contactController.js',
+                // 'home': '../controllers/homeController.js',
+                // 'randomBook': '../controllers/randomBookController.js',
+                // 'signin': '../controllers/signinController.js',
+                // 'signup': '../controllers/signupController.js',
+                'addBook': '../controllers/addBookController.js',
+                'addAuthor': '../controllers/addAuthorController.js',
+                'request': '../http-request/request.js'
+            }
+        });
+
+        System.import('main');
+    </script>
+</body>
+
+</html>
