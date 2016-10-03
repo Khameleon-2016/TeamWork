@@ -26,7 +26,7 @@ Also it is used firebase to save the data for registered users, added authors an
 ![](/images/loggedInUser.png)
 ![](/images/booksPage.png)
 
-### Starting the application - To start the application you should perform the followed steps:
+### Starting the application - To start the application you should perform the following steps:
 - Run command prompt
 - Perform the command "firebase serve" in it
 - Run in the browser http://localhost:5000/
