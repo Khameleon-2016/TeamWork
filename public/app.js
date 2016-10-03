@@ -65,6 +65,7 @@ var app = $.sammy('.content', function() {
         $('#signOut').addClass('hidden');
         $('#addBook').addClass('hidden');
         $('#addAuthor').addClass('hidden');
+        toastr.warning('You signed out from the application!');
     });
 
 

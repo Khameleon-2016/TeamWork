@@ -14,10 +14,8 @@ const booksController = function() {
                 compile = Handlebars.compile(template);
 
                 books = $.map(data.val().books, (value, index) => {
-                  return [value];
+                    return [value];
                 });
-
-                //console.log(books);
 
                 $('.content').html(compile(books));
             });

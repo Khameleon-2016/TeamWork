@@ -86,6 +86,7 @@ const addBookController = () => {
 
                 books.push(book.toObject());
 
+                toastr.success('You added book to the database!');
             });
         });
 };

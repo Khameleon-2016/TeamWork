@@ -53,7 +53,6 @@ const addAuthorController = () => {
         .get('templates/addAuthor-template.html')
         .done((template) => {
             $('.content').html(template);
-            //console.log($('#name').val());
 
             $('.addAuthor').on('click', () => {
 
@@ -61,12 +60,11 @@ const addAuthorController = () => {
                 $description = $('#description').val();
                 $imgUrl = $('#imgUrl').val();
 
-                //console.log($('#name').val());
-
                 author = new Author($name, $description, $imgUrl);
 
                 authors.push(author.toObject());
 
+                toastr.success('You added author to the database!');
             });
 
         });

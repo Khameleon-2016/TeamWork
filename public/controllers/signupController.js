@@ -25,6 +25,9 @@ const signupController = function() {
                         console.log(error.code);
                         console.log(error.message);
                     });
+
+                toastr.success('You registered successfully and you are autologged in the system!');
+
             });
         });
 };

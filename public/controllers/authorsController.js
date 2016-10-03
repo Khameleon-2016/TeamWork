@@ -16,8 +16,6 @@ const authorsController = function() {
                     return [value];
                 });
 
-                //console.log(authors);
-
                 $('.content').html(compile(authors));
 
             });

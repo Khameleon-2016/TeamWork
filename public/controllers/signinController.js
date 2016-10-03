@@ -21,6 +21,8 @@ const signinController = function() {
                     .catch((error) => {
                         console.log(error.code);
                     });
+
+                toastr.success('Now you can add your favorite authors and books.', 'You logged in successfully!');
             });
         });
 };
